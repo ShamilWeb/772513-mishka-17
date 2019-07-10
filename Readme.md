@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Шамиль Алимсултанов](https://up.htmlacademy.ru/adaptive/17/user/772513).
-* Наставник: `Неизвестно`.
+* Наставник: [Шамиль Асланов](https://htmlacademy.ru/profile/aslanov_shm)
 
 ---
 
