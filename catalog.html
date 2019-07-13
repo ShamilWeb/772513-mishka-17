@@ -10,81 +10,102 @@
 
 <body>
 
-  <header class="header">
-    <a class="logo header__logo">
-      <img src="http://placehold.it/150x100" alt="Логотип">
+  <header class="page-header">
+    <a class="logo page-header__logo">
+      <img src="http://placehold.it/150x100" alt="магазина ручных работ «Мишка»">
     </a>
-    <button class="header__hamburger" aria-label="Открывает и закрывает менью"></button>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" aria-label="Открывает и закрывает менью"></button>
+
+      <ul class="main-navigation__items">
+
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="catalog.html">Каталог товаров</a>
+        </li>
+
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="form.html">Вязание на заказ</a>
+        </li>
+
+        <li class="main-navigation__item">
+          <form action="https://echo.htmlacademy.ru">
+            <input type="search" placeholder="Поиск по сайту">
+          </form>
+        </li>
+
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Корзина пока пуста</a>
+        </li>
+
+      </ul>
+
+    </nav>
   </header>
 
-  <main>
+  <main class="page-content">
 
-    <h1 class="title-catalog">Каталог товаров</h1>
+    <h1 class="page-content__title">Каталог товаров</h1>
 
     <section class="catalog-products">
 
       <h2 class="visually-hidden">Наш товар</h2>
 
-      <ul class="catalog">
+      <article class="product">
+        <a class="product__link" href="#">
+          <img class="product__img" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
+        </a>
+        <a class="product__link" href="#">
+          <h3 class="product__title-product">Зайчик-попрыгайчик</h3>
+        </a>
+        <p class="product__details-product">Рост 30 см, вес 200 г</p>
+        <b class="product__price-product">1200 руб.</b>
+        <button class="buttom product__button-basket"></button>
+      </article>
 
-        <li class="catalog__product">
-          <a class="catalog__link1" href="#">
-            <img class="catalog__img" src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик">
-          </a>
-          <a class="catalog__link2" href="#">
-            <h3 class="catalog__title-product">Зайчик-попрыгайчик</h3>
-          </a>
-          <p class="catalog__specifications-product">Рост 30 см, вес 200 г</p>
-          <b class="catalog__price-product">1200 руб.</b>
-          <button class="catalog__button-basket"></button>
-        </li>
+      <article class="product">
+        <a class="product__link" href="#">
+          <img class="product__img" src="http://placehold.it/150x100" alt="Корзинка для белья">
+        </a>
+        <a class="product__link" href="#">
+          <h3 class="buttom product__title-product">Корзинка для белья</h3>
+        </a>
+        <p class="product__details-product">Диаметр 15 см, высота 10 см</p>
+        <b class="product__price-product">690 руб.</b>
+        <button class="buttom product__button-basket"></button>
+      </article>
 
-        <li class="catalog__product">
-          <a class="catalog__link1" href="#">
-            <img class="catalog__img" src="http://placehold.it/150x100" alt="Корзинка для белья">
-          </a>
-          <a class="catalog__link2" href="#">
-            <h3 class="catalog__title-product">Корзинка для белья</h3>
-          </a>
-          <p class="catalog__specifications-product">Диаметр 15 см, высота 10 см</p>
-          <b class="catalog__price-product">690 руб.</b>
-          <button class="catalog__button-basket"></button>
-        </li>
-
-        <li class="catalog__product">
-          <a class="catalog__link1" href="#">
-            <img class="catalog__img" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек">
-          </a>
-          <a class="catalog__link2" href="#">
-            <h3 class="catalog__title-product">Большая корзинка для игрушек</h3>
-          </a>
-          <p class="catalog__specifications-product">Диаметр 30 см, высота 30 см</p>
-          <b class="catalog__price-product">1500 руб.</b>
-          <button class="catalog__button-basket"></button>
-        </li>
-
-      </ul>
+      <article class="product">
+        <a class="product__link" href="#">
+          <img class="product__img" src="http://placehold.it/150x100" alt="Большая корзинка для игрушек">
+        </a>
+        <a class="product__link" href="#">
+          <h3 class="product__title-product">Большая корзинка для игрушек</h3>
+        </a>
+        <p class="product__details-product">Диаметр 30 см, высота 30 см</p>
+        <b class="product__price-product">1500 руб.</b>
+        <button class="buttom product__button-basket"></button>
+      </article>
 
     </section>
 
   </main>
 
-  <footer class="footer">
-    <ul class="social footer__social">
+  <footer class="page-footer">
+    <ul class="social page-footer__social">
       <li class="social__item">
         <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-          <img src="http://placehold.it/150x100" alt="Инстаграм"></a>
+          <img src="http://placehold.it/150x100" alt="Инстаграм htmlacademy"></a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-          <img src="http://placehold.it/150x100" alt="Фейсбук"></a>
+          <img src="http://placehold.it/150x100" alt="Фейсбук htmlacademy"></a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-          <img src="http://placehold.it/150x100" alt="Твиттер"></a>
+          <img src="http://placehold.it/150x100" alt="Твиттер htmlacademy"></a>
       </li>
     </ul>
-    <div class="copyright footer__copyright">
+    <div class="copyright page-footer__copyright">
       <b class="copyright__text">Разработано:</b>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="source/img/htmlacademy.svg" alt="HTML Academy" width="27" height="34"></a>
