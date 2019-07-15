@@ -11,79 +11,86 @@
 <body>
 
   <header class="page-header">
-    <a class="logo page-header__logo">
-      <img src="http://placehold.it/150x100" alt="магазина ручных работ «Мишка»">
-    </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" aria-label="Открывает и закрывает менью"></button>
 
-      <ul class="main-navigation__items">
+    <nav class="main-nav">
 
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="catalog.html">Каталог товаров</a>
+      <a class="page-header__logo logo">
+        <img src="http://placehold.it/86x35" width="86" height="35"
+          alt="Логотип интернет магазина ручных работ «Мишка»">
+      </a>
+
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть и закрыть меню</span>
+      </button>
+
+      <ul class="main-nav__items">
+
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
         </li>
 
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="form.html">Вязание на заказ</a>
-        </li>
-
-        <li class="main-navigation__item">
-          <form action="https://echo.htmlacademy.ru">
-            <input type="search" placeholder="Поиск по сайту">
-          </form>
-        </li>
-
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="#">Корзина пока пуста</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Вязание на заказ</a>
         </li>
 
       </ul>
+
+      <a class="main-nav__item" href="search.html">
+        <span class="visually-hidden">Поиск по сайту</span>
+      </a>
+
+      <a class="main-nav__item" href="cart.html">Корзина: пока пуста</a>
 
     </nav>
   </header>
 
-  <main class="page-index">
+  <main class="page-content">
 
-    <div class="start-home">
-      <img class="start-home__img" src="" alt="Милые штуки ручной работы для дома">
-      <h1 class="start-home__title" class="title-index">Милые штуки ручной работы для дома</h1>
-    </div>
+    <h1 class="page-content__title">Милые штуки ручной работы для дома</h1>
+    <img class="page-content__img" src="http://placehold.it/320x373" width="320" height="373"
+      alt="Белый игрушечный домик с тремя полками внутри. На каждой полке лежит вязанная корзинка и игрушка.">
 
-    <section class="classification-product">
-      <h2 class="visually-hidden">Классификация товаров</h2>
-      <ul class="classification-product__items">
-        <li class="classification-product__item"><a href="#">Предметы интерьера</a></li>
-        <li class="classification-product__item"><a href="#">Детские игрушки</a></li>
+    <section class="category-products">
+      <h2 class="visually-hidden">Категории товаров</h2>
+
+      <ul class="category-products__list">
+        <li class="category-products__item">
+          <a class="category-products__link" href="#">Предметы интерьера</a>
+        </li>
+        <li class="category-products__item">
+          <a class="category-products__link" href="#">Детский игрушки</a>
+        </li>
       </ul>
     </section>
 
-    <section class="card">
-      <h2 class="card__title">
+    <section class="popular-product">
+      <h2 class="popular-product__title">
         Товар недели
       </h2>
-      <h3 class="card__title-name">
+      <h3 class="popular-product__title-name">
         Вязаные корзинки
       </h3>
-      <p class="card__description">
+      <p class="popular-product__description">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках итрех размерах.
       </p>
-      <table class="card__details">
+      <table class="popular-product__details">
         <tr>
-          <th class="card__property">Цвет:</th>
-          <th class="card__value">«Тиффани»/серый</th>
+          <th class="popular-product__property">Цвет:</th>
+          <td class="popular-product__value">«Тиффани»/серый</th>
         </tr>
         <tr>
-          <th class="card__property">Диаметр:</th>
-          <th class="card__value">25 см</th>
+          <th class="popular-product__property">Диаметр:</th>
+          <td class="popular-product__value">25 см</th>
         </tr>
         <tr>
-          <th class="card__property">Высота:</th>
-          <th class="card__value">15 см</th>
+          <th class="popular-product__property">Высота:</th>
+          <td class="popular-product__value">15 см</th>
         </tr>
       </table>
-      <img class="card__img" src="http://placehold.it/150x100" alt="Вязаные корзинки">
-      <p class="card__price">Цена: 990 руб.</p>
-      <button class="button card__order">ЗАКАЗАТЬ</button>
+      <img class="popular-product__photo" src="http://placehold.it/260x315" width="260" height="315"
+        alt="Вязаные корзинки">
+      <b class="popular-product__price">Цена: 990 руб.</b>
+      <button class="button popular-product__order" type="button">Заказать</button>
     </section>
 
     <section class="about-us">
@@ -98,40 +105,59 @@
       </ul>
     </section>
 
-    <footer class="page-footer">
-      <ul class="social page-footer__social">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-            <img src="http://placehold.it/150x100" alt="Инстаграм htmlacademy"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-            <img src="http://placehold.it/150x100" alt="Фейсбук htmlacademy"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-            <img src="http://placehold.it/150x100" alt="Твиттер htmlacademy"></a>
-        </li>
-      </ul>
-      <div class="copyright page-footer__copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="source/img/htmlacademy.svg" alt="HTML Academy" width="27" height="34"></a>
-      </div>
-    </footer>
-
   </main>
 
-  <section class="modal-index">
-    <h2 class="modal-index__title">Добавить в корзину</h2>
-    <p class="modal-index__p">Выберите размер:</p>
-    <ul class="modal-index__items">
-      <li class="modal-index__item">S</li>
-      <li class="modal-index__item">M</li>
-      <li class="modal-index__item">L</li>
+  <footer class="page-footer">
+    <ul class="social page-footer__social">
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+          <img src="http://placehold.it/150x100" alt="Инстаграм HTML Academy"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+          <img src="http://placehold.it/150x100" alt="Фейсбук HTML Academy"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+          <img src="http://placehold.it/150x100" alt="Твиттер HTML Academy"></a>
+      </li>
     </ul>
-    <button class="button modal-index__button">ДОБАВИТЬ</button>
+    <div class="copyright page-footer__copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy"></a>
+    </div>
+  </footer>
+
+  <section class="modal-cart">
+    <h2 class="modal-cart__title">Добавить в корзину</h2>
+
+    <form class="modal-cart__form" action="https://echo.htmlacademy.ru">
+      <fieldset class="modal-cart__group">
+        <legend class="modal-cart__form-caption">Выберите размер:</legend>
+
+        <p class="modal-cart__item">
+          <label class="modal-cart__label" for="size-s">S</label>
+          <input class="modal-cart__size" id="size-s" type="radio" name="size" value="S">
+        </p>
+
+        <p class="modal-cart__item">
+          <label class="modal-cart__label" for="size-m">M</label>
+          <input class="modal-cart__size" id="size-m" type="radio" name="size" value="M">
+        </p>
+
+        <p class="modal-cart__item">
+          <label class="modal-cart__label" for="size-l">L</label>
+          <input class="modal-cart__size" id="size-l" type="radio" name="size" value="L">
+        </p>
+      </fieldset>
+
+      <button class="button buttom--submit">Добавить</button>
+    </form>
   </section>
+
+  <div class="modal-overlay"></div>
+
 </body>
 
 </html>
