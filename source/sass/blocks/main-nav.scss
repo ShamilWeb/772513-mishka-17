@@ -1,1 +1,8 @@
-
+.main-nav__link {
+  &--search {
+    background: url(../../img/icon-search.svg) no-repeat;
+  }
+  &--cart {
+    background: url(../../img/icon-cart.svg) no-repeat;
+  }
+}

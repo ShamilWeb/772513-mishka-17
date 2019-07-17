@@ -1,1 +1,10 @@
 
+.category-products__link {
+  display: block;
+  &--interior {
+    background: #63d1bb url(../../img/icon-interior.svg) no-repeat;
+  }
+  &--toy {
+    background: #56c3b2 url(../../img/icon-toy.svg) no-repeat;
+  }
+}
