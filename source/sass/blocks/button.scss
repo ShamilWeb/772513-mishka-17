@@ -1,5 +1,10 @@
 .button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: #444444;
   &--submit {
     background-color: #63d2bc;
+    color: #ffffff;
   }
 }

@@ -1,6 +1,8 @@
 
 .category-products__link {
   display: block;
+  font-weight: bold;
+  font-size: 19px;
   &--interior {
     background: #63d1bb url(../../img/icon-interior.svg) no-repeat;
   }
