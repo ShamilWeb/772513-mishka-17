@@ -3,14 +3,15 @@
 }
 
 .main-nav__link {
+  display: block;
   font-weight: bold;
   color: #000000;
+
   &--search {
-    background: url(../../img/icon-search.svg) no-repeat;
+    background: url("../img/icon-search.svg") no-repeat;
   }
+
   &--cart {
-    background: url(../../img/icon-cart.svg) no-repeat;
+    background: url("../img/icon-cart.svg") no-repeat;
   }
 }
-
-

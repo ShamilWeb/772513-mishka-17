@@ -9,11 +9,13 @@
   line-height: 1.26;
   padding: 28px;
   color: #ffffff;
+
   &--interior {
-    background: #63d1bb url(../img/icon-interior.svg) 95% 50% no-repeat;
+    background: #63d1bb url("../img/icon-interior.svg") 95% 50% no-repeat;
   }
+
   &--toy {
-    background: #56c3b2 url(../img/icon-toy.svg) 95% 50% no-repeat;
+    background: #56c3b2 url("../img/icon-toy.svg") 95% 50% no-repeat;
   }
 }
 
