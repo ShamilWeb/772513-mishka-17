@@ -17,8 +17,7 @@
     <nav class="main-nav">
 
       <a class="page-header__logo logo" href="index.html">
-        <img src="img/logo-mobile.svg" width="86" height="35"
-          alt="Логотип интернет магазина ручных работ «Мишка»">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина ручных работ «Мишка»">
       </a>
 
       <button class="main-nav__toggle" type="button">
@@ -47,6 +46,114 @@
   </header>
 
   <main class="page-content">
+
+    <h1 class="page-content__title page-content__title--not-index">Вязание на заказ</h1>
+
+    <section class="filter">
+
+      <p class="filter__text">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+        уточнить детали.
+      </p>
+
+      <form class="filter__form" action="https://echo.htmlacademy.ru">
+
+        <fieldset class="filter__type">
+          <legend class="filter__title">Тип</legend>
+          <label class="filter__label">
+            <input class="filter__radio" type="radio" name="type" value="Аксессуар для интерьера" checked>
+            <span class="filter__icon"></span>
+            <span class="filter__caption">Аксессуар для интерьера</span>
+          </label>
+          <label>
+            <input class="filter__radio" type="radio" name="type" value="Детская игрушка">
+            <span class="filter__icon"></span>
+            <span class="filter__caption">Детская игрушка</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="filter__color">
+          <legend class="filter__title">Цвет</legend>
+          <label class="filter__label">
+            <input class="filter__checkbox" type="checkbox" name="color" checked>
+            <span class="filter__icon"></span>
+            <span class="filter__caption">Белый</span>
+          </label>
+
+          <label class="filter__label">
+            <input class="filter__checkbox" type="checkbox" name="color" checked>
+            <span class="filter__icon"></span>
+            <span class="filter__caption">Серый</span>
+          </label>
+
+          <label class="filter__label">
+            <input class="filter__checkbox" type="checkbox" name="color">
+            <span class="filter__icon"></span>
+            <span class="filter__caption">«Тиффани»</span>
+          </label>
+
+          <label class="filter__label">
+            <input class="filter__checkbox" type="checkbox" name="color">
+            <span class="filter__icon"></span>
+            <span class="filter__caption">Черный</span>
+          </label>
+
+          <label class="filter__label">
+            <input class="filter__checkbox" type="checkbox" name="color">
+            <span class="filter__icon"></span>
+            <span class="filter__caption">Розовый</span>
+          </label>
+
+          <label class="filter__label">
+            <input class="filter__checkbox" type="checkbox" name="color">
+            <span class="filter__icon"></span>
+            <span class="filter__caption">Оранжевый</span>
+          </label>
+
+        </fieldset>
+
+        <fieldset class="filter__name">
+          <legend class="filter__title">ФИО</legend>
+
+          <label class="filter__label">
+            <span class="filter__caption">Имя:</span>
+            <input type="text" name="name" placeholder="Введите ваше имя*">
+          </label>
+
+          <label class="filter__label">
+            <span class="filter__caption">Фамилия:</span>
+            <input type="text" name="surname" placeholder="Укажите фамилию*">
+          </label>
+
+          <label class="filter__label">
+            <span class="filter__caption">Отчество:</span>
+            <input type="text" name="middle-name" placeholder="Отчество, если желаете">
+          </label>
+
+        </fieldset>
+
+        <fieldset class="filter__tel">
+          <legend class="filter__title">ТЕЛ</legend>
+          <input type="tel" name="telephone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        </fieldset>
+
+        <fieldset class="filter__email">
+          <legend class="filter__title">E-MAIL</legend>
+          <input type="email" name="email" placeholder="Ваш Email*">
+        </fieldset>
+
+        <fieldset class="filter__extra">
+          <legend class="filter__title">ДОП</legend>
+          <textarea class="filter__textarea" placeholder="Опишите все ваши пожелания к заказу">
+          </textarea>
+        </fieldset>
+
+        <small class="filter__necessarily">
+          *Поля обязательны для заполнения
+        </small>
+        <button class="button filter__button">Отправить заказ</button>
+      </form>
+    </section>
 
   </main>
 
