@@ -51,6 +51,8 @@
 
     <section class="filter">
 
+      <h2 class="visually-hidden">Фильтр</h2>
+
       <p class="filter__text">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
         уточнить детали.
@@ -59,90 +61,72 @@
       <form class="filter__form" action="https://echo.htmlacademy.ru">
 
         <fieldset class="filter__type">
+
           <legend class="filter__title">Тип</legend>
-          <label class="filter__label">
-            <input class="filter__radio" type="radio" name="type" value="Аксессуар для интерьера" checked>
-            <span class="filter__icon"></span>
-            <span class="filter__caption">Аксессуар для интерьера</span>
-          </label>
-          <label>
-            <input class="filter__radio" type="radio" name="type" value="Детская игрушка">
-            <span class="filter__icon"></span>
-            <span class="filter__caption">Детская игрушка</span>
-          </label>
+
+          <input class="filter__radio" type="radio" name="type" value="Аксессуар для интерьера" checked>
+          <label class="filter__label">Аксессуар для интерьера</label>
+
+          <input class="filter__radio" type="radio" name="type" value="Детская игрушка">
+          <label class="filter__label">Детская игрушка</label>
         </fieldset>
 
         <fieldset class="filter__color">
+
           <legend class="filter__title">Цвет</legend>
-          <label class="filter__label">
-            <input class="filter__checkbox" type="checkbox" name="color" checked>
-            <span class="filter__icon"></span>
-            <span class="filter__caption">Белый</span>
-          </label>
 
-          <label class="filter__label">
-            <input class="filter__checkbox" type="checkbox" name="color" checked>
-            <span class="filter__icon"></span>
-            <span class="filter__caption">Серый</span>
-          </label>
+          <input class="filter__checkbox" type="checkbox" name="color" checked>
+          <label class="filter__label">Белый</label>
 
-          <label class="filter__label">
-            <input class="filter__checkbox" type="checkbox" name="color">
-            <span class="filter__icon"></span>
-            <span class="filter__caption">«Тиффани»</span>
-          </label>
+          <input class="filter__checkbox" type="checkbox" name="color" checked>
+          <label class="filter__label">Серый</label>
 
-          <label class="filter__label">
-            <input class="filter__checkbox" type="checkbox" name="color">
-            <span class="filter__icon"></span>
-            <span class="filter__caption">Черный</span>
-          </label>
+          <input class="filter__checkbox" type="checkbox" name="color">
+          <label class="filter__label">«Тиффани»</label>
 
-          <label class="filter__label">
-            <input class="filter__checkbox" type="checkbox" name="color">
-            <span class="filter__icon"></span>
-            <span class="filter__caption">Розовый</span>
-          </label>
+          <input class="filter__checkbox" type="checkbox" name="color">
+          <label class="filter__label">Черный</label>
 
-          <label class="filter__label">
-            <input class="filter__checkbox" type="checkbox" name="color">
-            <span class="filter__icon"></span>
-            <span class="filter__caption">Оранжевый</span>
-          </label>
+          <input class="filter__checkbox" type="checkbox" name="color">
+          <label class="filter__label">Розовый</label>
+
+          <input class="filter__checkbox" type="checkbox" name="color">
+          <label class="filter__label">Оранжевый</label>
 
         </fieldset>
 
         <fieldset class="filter__name">
+
           <legend class="filter__title">ФИО</legend>
 
           <label class="filter__label">
-            <span class="filter__caption">Имя:</span>
-            <input type="text" name="name" placeholder="Введите ваше имя*">
+            <label class="filter__label">Имя:</label>
+            <input type="text" name="name" placeholder="Введите ваше имя*" required>
           </label>
 
           <label class="filter__label">
-            <span class="filter__caption">Фамилия:</span>
-            <input type="text" name="surname" placeholder="Укажите фамилию*">
+            <label class="filter__label">Фамилия:</label>
+            <input type="text" name="surname" placeholder="Укажите фамилию*" required>
           </label>
 
           <label class="filter__label">
-            <span class="filter__caption">Отчество:</span>
+            <label class="filter__label">Отчество:</label>
             <input type="text" name="middle-name" placeholder="Отчество, если желаете">
           </label>
 
         </fieldset>
 
-        <fieldset class="filter__tel">
+        <fieldset class="filter__phone">
           <legend class="filter__title">ТЕЛ</legend>
-          <input type="tel" name="telephone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <input type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
         </fieldset>
 
         <fieldset class="filter__email">
           <legend class="filter__title">E-MAIL</legend>
-          <input type="email" name="email" placeholder="Ваш Email*">
+          <input type="email" name="email" placeholder="Ваш Email*" required>
         </fieldset>
 
-        <fieldset class="filter__extra">
+        <fieldset class="filter__message">
           <legend class="filter__title">ДОП</legend>
           <textarea class="filter__textarea" placeholder="Опишите все ваши пожелания к заказу">
           </textarea>
