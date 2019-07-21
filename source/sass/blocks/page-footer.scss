@@ -2,4 +2,27 @@
   background-color: #f1f1f1;
   padding: 25px 70px 30px;
   outline: 2px solid red;
+  width: calc(100% + 60px);
+  margin: 0 -30px;
+ box-sizing: border-box;
+
+  @media (min-width: 772px) {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 100px);
+    margin: 0 -50px;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: 772px) {
+    display: block;
+  }
+}
+
+.page-footer__social {
+  display: flex;
+  list-style-type: none;
 }

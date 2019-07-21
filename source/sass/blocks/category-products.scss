@@ -1,5 +1,12 @@
 .category-products {
   outline: 2px solid red;
+  width: calc(100% + 60px);
+  margin: 0 -30px;
+
+  @media (min-width: 772px) {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .category-products__link {
@@ -21,4 +28,16 @@
 
 .category-products__list {
   margin: 0;
+  list-style-type: none;
+  padding: 0;
+
+  @media (min-width: 772px) {
+    display: flex;
+  }
+}
+
+.category-products__item {
+  @media (min-width: 772px) {
+    width: 50%;
+  }
 }

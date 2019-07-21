@@ -16,7 +16,7 @@
 
     <nav class="main-nav">
 
-      <a class="page-header__logo logo" href="index.html">
+      <a class="main-nav__logo logo" href="index.html">
         <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина ручных работ «Мишка»">
       </a>
 
@@ -24,7 +24,7 @@
         <span class="visually-hidden">Открыть и закрыть меню</span>
       </button>
 
-      <ul class="main-nav__items">
+      <ul class="main-nav__items  main-nav__items--first">
 
         <li class="main-nav__item">
           <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
@@ -36,12 +36,21 @@
 
       </ul>
 
-      <a class="main-nav__link" href="search.html">
+      <a class="main-nav__link main-nav__link--search" href="search.html">
         <span class="visually-hidden">Поиск по сайту</span>
       </a>
 
-      <a class="main-nav__link" href="cart.html">Корзина: пока пуста</a>
+      <a class="main-nav__link main-nav__link--cart" href="cart.html">Корзина: пока пуста</a>
 
+      <ul class="main-nav__items main-nav__items--second">
+        <li>
+          <a class="main-nav__link" href="">Новые поступления</a>
+        </li>
+        <li>
+          <a class="main-nav__link" href="">Распродажа</a>
+        </li>
+      </ul>
+      <a class="main-nav__link main-nav__link--free-shipping" href="">Бесплатная доставка по России</a>
     </nav>
   </header>
 
@@ -142,6 +151,11 @@
   </main>
 
   <footer class="page-footer">
+
+    <a class="page-footer__logo">
+      <img src="img/logo-footer.svg" alt="Логотип интернет магазина ручных работ «Мишка»">
+    </a>
+
     <ul class="social page-footer__social">
       <li class="social__item">
         <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">

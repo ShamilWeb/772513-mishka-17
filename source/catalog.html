@@ -16,7 +16,7 @@
 
     <nav class="main-nav">
 
-      <a class="page-header__logo logo" href="index.html">
+      <a class="main-nav__logo logo" href="index.html">
         <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина ручных работ «Мишка»">
       </a>
 
@@ -24,7 +24,7 @@
         <span class="visually-hidden">Открыть и закрыть меню</span>
       </button>
 
-      <ul class="main-nav__items">
+      <ul class="main-nav__items  main-nav__items--first">
 
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--active">Каталог товаров</a>
@@ -36,18 +36,29 @@
 
       </ul>
 
-      <a class="main-nav__link" href="search.html">
+      <a class="main-nav__link main-nav__link--search" href="search.html">
         <span class="visually-hidden">Поиск по сайту</span>
       </a>
 
-      <a class="main-nav__link" href="cart.html">Корзина: пока пуста</a>
+      <a class="main-nav__link main-nav__link--cart" href="cart.html">Корзина: пока пуста</a>
 
+      <ul class="main-nav__items main-nav__items--second">
+        <li>
+          <a class="main-nav__link" href="">Новые поступления</a>
+        </li>
+        <li>
+          <a class="main-nav__link" href="">Распродажа</a>
+        </li>
+      </ul>
+      <a class="main-nav__link main-nav__link--free-shipping" href="">Бесплатная доставка по России</a>
     </nav>
   </header>
 
   <main class="page-content">
 
-    <h1 class="page-content__title page-content__title--not-index">Каталог товаров</h1>
+    <div class="page-content__start-home page-content__start-home--not-index">
+      <h1 class="page-content__title">Каталог товаров</h1>
+    </div>
 
     <section class="catalog-products">
 
@@ -58,14 +69,16 @@
           <img class="product__photo" src="img/photo-hare-mobile@1x.jpg" width="260" height="165"
             alt="Зайчик-попрыгайчик">
         </a>
-        <a class="product__link-name" href="#">
-          <h3 class="product__name">Зайчик-попрыгайчик</h3>
-        </a>
-        <p class="product__details">Рост 30 см, вес 200 г</p>
-        <b class="product__price">1200 руб.</b>
-        <button class="button product__add-to-cart" type="button">
-          <span class="visually-hidden">Добавить в корзину</span>
-        </button>
+        <div class="product__wrapper">
+          <a class="product__link-name" href="#">
+            <h3 class="product__name">Зайчик-попрыгайчик</h3>
+          </a>
+          <p class="product__details">Рост 30 см, вес 200 г</p>
+          <b class="product__price">1200 руб.</b>
+          <button class="button product__add-to-cart" type="button">
+            <span class="visually-hidden">Добавить в корзину</span>
+          </button>
+        </div>
       </article>
 
       <article class="product">
@@ -73,14 +86,16 @@
           <img class="product__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="165"
             alt="Корзинка для белья">
         </a>
-        <a class="product__link-name" href="#">
-          <h3 class="product__name">Корзинка для белья</h3>
-        </a>
-        <p class="product__details">Диаметр 15 см, высота 10 см</p>
-        <b class="product__price">690 руб.</b>
-        <button class="button product__add-to-cart" type="button">
-          <span class="visually-hidden">Добавить в корзину</span>
-        </button>
+        <div class="product__wrapper">
+          <a class="product__link-name" href="#">
+            <h3 class="product__name">Корзинка для белья</h3>
+          </a>
+          <p class="product__details">Диаметр 15 см, высота 10 см</p>
+          <b class="product__price">690 руб.</b>
+          <button class="button product__add-to-cart" type="button">
+            <span class="visually-hidden">Добавить в корзину</span>
+          </button>
+        </div>
       </article>
 
       <article class="product">
@@ -88,14 +103,16 @@
           <img class="product__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="165"
             alt="Большая корзинка для игрушек">
         </a>
-        <a class="product__link-name" href="#">
-          <h3 class="product__name">Большая корзинка для игрушек</h3>
-        </a>
-        <p class="product__details">Диаметр 30 см, высота 30 см</p>
-        <b class="product__price">1500 руб.</b>
-        <button class="button product__add-to-cart" type="button">
-          <span class="visually-hidden">Добавить в корзину</span>
-        </button>
+        <div class="product__wrapper">
+          <a class="product__link-name" href="#">
+            <h3 class="product__name">Большая корзинка для игрушек</h3>
+          </a>
+          <p class="product__details">Диаметр 30 см, высота 30 см</p>
+          <b class="product__price">1500 руб.</b>
+          <button class="button product__add-to-cart" type="button">
+            <span class="visually-hidden">Добавить в корзину</span>
+          </button>
+        </div>
       </article>
 
     </section>
@@ -122,6 +139,11 @@
   </main>
 
   <footer class="page-footer">
+
+    <a class="page-footer__logo">
+      <img src="img/logo-footer.svg" alt="Логотип интернет магазина ручных работ «Мишка»">
+    </a>
+
     <ul class="social page-footer__social">
       <li class="social__item">
         <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">

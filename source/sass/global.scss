@@ -1,4 +1,17 @@
 body {
+  width: 320px;
+  margin: auto;
+  padding: 0 30px;
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
+
+  @media (min-width: 772px) {
+    width: 672px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: 1150px) {
+    width: 1050px;
+    padding: 0 50px;
+  }
 }

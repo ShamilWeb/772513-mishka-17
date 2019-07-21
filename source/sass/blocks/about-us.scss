@@ -11,3 +11,9 @@
 .about-us__title {
   font-size: 25px;
 }
+
+.about-us__wrapper {
+  @media (min-width: 772px) {
+  display: flex;
+  }
+}
