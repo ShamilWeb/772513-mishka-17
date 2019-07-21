@@ -16,12 +16,11 @@
 .page-content__start-home--not-index {
   background: none;
   background-color: #f1f1f1;
-  }
+}
 
 .page-content__title {
   font-size: 27px;
   line-height: 1.11;
-  margin: 0;
   outline: 2px solid red;
   text-align: center;
   width: 300px;
@@ -30,6 +29,4 @@
   @media (min-width: 772px) {
     width: 400px;
   }
-
-  @media (min-width: 1150px) {}
 }
