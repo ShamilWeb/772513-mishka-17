@@ -112,7 +112,7 @@
   top: 50%;
   transform: translateY(-50%);
   border: none;
-  background: url(../img/icon-menu-open.svg);
+  background: url("../img/icon-menu-open.svg");
 
   @media (min-width: 768px) {
     display: none;
@@ -134,15 +134,15 @@
   padding: 22px 0 19px;
 
 
-@media (min-width: 768px) {
-  flex-grow: 1;
-  border-bottom: 1px solid #e8e8e8;
-}
+  @media (min-width: 768px) {
+    flex-grow: 1;
+    border-bottom: 1px solid #e8e8e8;
+  }
 
-@media (min-width: 1150px) {
-  order: 2;
-  padding-left: 90px;
-}
+  @media (min-width: 1150px) {
+    order: 2;
+    padding-left: 90px;
+  }
 }
 
 .main-nav__link-hide {

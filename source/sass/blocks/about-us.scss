@@ -18,7 +18,7 @@
   position: absolute;
   width: 100%;
   height: 6px;
-  background: url(../../img/bg-zigzag-line.svg);
+  background: url("../../img/bg-zigzag-line.svg");
   background-size: 340px;
   top: 0;
   left: 0;
@@ -63,11 +63,11 @@
 }
 
 .about-us__item--flower::before {
-  background: url(../img/icon-feature-flower.svg) left bottom no-repeat;
+  background: url("../img/icon-feature-flower.svg") left bottom no-repeat;
 }
 
 .about-us__item--money::before {
-  background: url(../img/icon-feature-money.svg) left bottom no-repeat;
+  background: url("../img/icon-feature-money.svg") left bottom no-repeat;
 
   @media (min-width: 768px) {
     margin-top: 50px;
@@ -75,7 +75,7 @@
 }
 
 .about-us__item--heart::before {
-  background: url(../img/icon-feature-heart.svg) left bottom no-repeat;
+  background: url("../img/icon-feature-heart.svg") left bottom no-repeat;
 
   @media (min-width: 768px) {
     margin-top: 50px;
@@ -83,11 +83,11 @@
 }
 
 .about-us__item--ball::before {
-  background: url(../img/icon-feature-ball.svg) left bottom no-repeat;
+  background: url("../img/icon-feature-ball.svg") left bottom no-repeat;
 }
 
 .about-us__item--rocket::before {
-  background: url(../img/icon-feature-rocket.svg) left bottom no-repeat;
+  background: url("../img/icon-feature-rocket.svg") left bottom no-repeat;
 
   @media (min-width: 768px) {
     margin-top: 50px;
@@ -95,7 +95,7 @@
 }
 
 .about-us__item--gift::before {
-  background: url(../img/icon-feature-gift.svg) left bottom no-repeat;
+  background: url("../img/icon-feature-gift.svg") left bottom no-repeat;
 
   @media (min-width: 768px) {
     margin-top: 50px;

@@ -27,8 +27,8 @@
 .page-content__title {
   font-size: 27px;
   line-height: 1.11;
-
   text-align: center;
+
   @include centering();
 
   @media (min-width: 768px) {
