@@ -1,4 +1,9 @@
 .page-header {
-  padding: 22px 32px 22px 0;
-  outline: 2px solid red;
+  width: 320px;
+
+  @include centering();
+
+  @media (min-width: 768px) {
+    margin-bottom: -40px;
+  }
 }

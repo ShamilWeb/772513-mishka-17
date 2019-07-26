@@ -1,6 +1,17 @@
 .modal-cart {
+  display: none;
   padding: 35px 30px 45px;
-  outline: 2px solid red;
+
+  width: 320px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -160px;
+
+  @media (min-width: 768px) {
+    width: 566px;
+    margin: -283px;
+  }
 }
 
 .modal-cart__title {
