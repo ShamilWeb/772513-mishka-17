@@ -1,19 +1,144 @@
 .about-us {
-  padding: 35px 30px;
-  outline: 2px solid red;
+  padding: 37px 0;
+  padding-bottom: 35px;
+
+  position: relative;
+
+  @media (min-width: 768px) {
+    padding: 70px 0 85px;
+  }
+
+  @media (min-width: 1150px) {
+    padding: 80px 0 90px;
+  }
+}
+
+.about-us::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: url(../../img/bg-zigzag-line.svg);
+  background-size: 340px;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+  background-repeat: repeat-x;
+
+  @media (min-width: 768px) {
+    height: 15px;
+    background-size: 800px;
+  }
+
+  @media (min-width: 1150px) {
+    height: 23px;
+    background-size: 1100px;
+  }
+}
+
+.about-us__wrapper-centering {
+  @include centering();
+
+  @media (min-width: 1150px) {
+    padding-left: 170px;
+  }
 }
 
 .about-us__item {
   font-weight: bold;
   line-height: 1.18;
+  margin-top: 26px;
+
+  @media (min-width: 768px) {
+    margin-top: 22px;
+  }
+}
+
+.about-us__item::before {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 37px;
+  margin-bottom: 20px;
+}
+
+.about-us__item--flower::before {
+  background: url(../img/icon-feature-flower.svg) left bottom no-repeat;
+}
+
+.about-us__item--money::before {
+  background: url(../img/icon-feature-money.svg) left bottom no-repeat;
+
+  @media (min-width: 768px) {
+    margin-top: 50px;
+  }
+}
+
+.about-us__item--heart::before {
+  background: url(../img/icon-feature-heart.svg) left bottom no-repeat;
+
+  @media (min-width: 768px) {
+    margin-top: 50px;
+  }
+}
+
+.about-us__item--ball::before {
+  background: url(../img/icon-feature-ball.svg) left bottom no-repeat;
+}
+
+.about-us__item--rocket::before {
+  background: url(../img/icon-feature-rocket.svg) left bottom no-repeat;
+
+  @media (min-width: 768px) {
+    margin-top: 50px;
+  }
+}
+
+.about-us__item--gift::before {
+  background: url(../img/icon-feature-gift.svg) left bottom no-repeat;
+
+  @media (min-width: 768px) {
+    margin-top: 50px;
+  }
+}
+
+.about-us__items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .about-us__title {
   font-size: 25px;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    font-size: 43px;
+  }
+
+  @media (min-width: 1150px) {
+    font-size: 53px;
+  }
 }
 
 .about-us__wrapper {
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.about-us__items--first {
+  @media (min-width: 768px) {
+    margin-right: 100px;
+  }
+
+  @media (min-width: 1150px) {
+    margin-right: 120px;
   }
 }

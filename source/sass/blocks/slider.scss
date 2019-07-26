@@ -1,0 +1,36 @@
+.slider__toggles {
+  display: flex;
+  margin: 35px 0 38px;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    width: 200px;
+    right: 200px;
+    bottom: 52px;
+    margin: 0;
+  }
+
+  @media (min-width: 1150px) {
+    right: -10px;
+    bottom: 62px;
+    right: 90px;
+  }
+}
+
+.slider__toggle {
+  width: 50%;
+  height: 52px;
+  background-color: transparent;
+  border: 1px solid #ececec;
+  background: url(../img/icon-left-arrow.svg) 50% 50% no-repeat;
+
+  @media (min-width: 768px) {
+    border: none;
+    background-position-x: 62%;
+  }
+}
+
+.slider__toggle--right {
+  border-right: none;
+  transform: rotate(180deg)
+}
