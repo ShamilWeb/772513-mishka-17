@@ -6,20 +6,6 @@
   }
 }
 
-.category-products::after {
-  @media (min-width: 768px) {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    width: 100%;
-    height: 34px;
-    background: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-size: auto 23px;
-  }
-}
-
 .category-products__link {
   display: block;
   font-weight: bold;

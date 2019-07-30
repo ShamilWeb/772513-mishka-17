@@ -80,13 +80,14 @@
 
             <ul class="filter__list filter__list--type">
               <li class="filter__item filter__item--type">
-                <input class="filter__radio visually-hidden" type="radio" name="type" value="Аксессуар для интерьера"
-                  checked>
-                <label class="filter__label">Аксессуар для интерьера</label>
+                <input class="filter__radio visually-hidden" id="radio-1" type="radio" name="type"
+                  value="Аксессуар для интерьера" checked>
+                <label class="filter__label filter__label--type" for="radio-1">Аксессуар для интерьера</label>
               </li>
               <li class="filter__item filter__item--type">
-                <input class="filter__radio visually-hidden" type="radio" name="type" value="Детская игрушка">
-                <label class="filter__label">Детская игрушка</label>
+                <input class="filter__radio visually-hidden" id="radio-2" type="radio" name="type"
+                  value="Детская игрушка">
+                <label class="filter__label filter__label--type" for="radio-2">Детская игрушка</label>
               </li>
             </ul>
           </div>
@@ -99,33 +100,33 @@
 
             <ul class="filter__list filter__list--color">
               <li class="filter__item filter__item--color">
-                <input class="filter__checkbox visually-hidden" type="checkbox" name="color" checked>
-                <label class="filter__label">Белый</label>
+                <input class="filter__checkbox visually-hidden" id="color-1" type="checkbox" name="color" checked>
+                <label class="filter__label filter__label--color" for="color-1">Белый</label>
               </li>
 
               <li class="filter__item filter__item--color">
-                <input class="filter__checkbox visually-hidden" type="checkbox" name="color" checked>
-                <label class="filter__label">Серый</label>
+                <input class="filter__checkbox visually-hidden" id="color-2" type="checkbox" name="color" checked>
+                <label class="filter__label filter__label--color" for="color-2">Серый</label>
               </li>
 
               <li class="filter__item filter__item--color">
-                <input class="filter__checkbox visually-hidden" type="checkbox" name="color">
-                <label class="filter__label">«Тиффани»</label>
+                <input class="filter__checkbox visually-hidden" id="color-3" type="checkbox" name="color">
+                <label class="filter__label filter__label--color" for="color-3">«Тиффани»</label>
               </li>
 
               <li class="filter__item filter__item--color">
-                <input class="filter__checkbox visually-hidden" type="checkbox" name="color">
-                <label class="filter__label">Черный</label>
+                <input class="filter__checkbox visually-hidden" id="color-4" type="checkbox" name="color">
+                <label class="filter__label filter__label--color" for="color-4">Черный</label>
               </li>
 
               <li class="filter__item filter__item--color">
-                <input class="filter__checkbox visually-hidden" type="checkbox" name="color">
-                <label class="filter__label">Розовый</label>
+                <input class="filter__checkbox visually-hidden" id="color-5" type="checkbox" name="color">
+                <label class="filter__label filter__label--color" for="color-5">Розовый</label>
               </li>
 
               <li class="filter__item filter__item--color">
-                <input class="filter__checkbox visually-hidden" type="checkbox" name="color">
-                <label class="filter__label">Оранжевый</label>
+                <input class="filter__checkbox visually-hidden" id="color-6" type="checkbox" name="color">
+                <label class="filter__label filter__label--color" for="color-6">Оранжевый</label>
               </li>
             </ul>
           </div>
@@ -138,7 +139,7 @@
             <legend class="filter__title">ФИО</legend>
 
             <ul class="filter__list filter__list--name">
-              <li>
+              <li class="filter__item-name">
                 <label class="filter__label filter__label--flex">
                   Имя:
                   <input class="filter__placeholder filter__placeholder--grow" type="text" name="name"
@@ -146,7 +147,7 @@
                 </label>
               </li>
 
-              <li>
+              <li class="filter__item-name">
                 <label class="filter__label filter__label--flex">
                   Фамилия:
                   <input class="filter__placeholder filter__placeholder--grow" type="text" name="surname"
@@ -154,7 +155,7 @@
                 </label>
               </li>
 
-              <li>
+              <li class="filter__item-name">
                 <label class="filter__label filter__label--flex">
                   Отчество:
                   <input class="filter__placeholder filter__placeholder--grow" type="text" name="middle-name"
@@ -176,7 +177,7 @@
 
         <fieldset class="filter__fieldset filter__fieldset--email">
           <div class="filter__wrapper">
-            <legend class="filter__title">E-MAIL</legend>
+            <legend class="filter__title filter__title--email">E-MAIL</legend>
             <input class="filter__placeholder filter__placeholder--email" type="email" name="email"
               placeholder="Ваш Email*" required>
           </div>
@@ -204,28 +205,30 @@
 
   <footer class="page-footer">
 
-    <a class="page-footer__logo">
-      <img src="img/logo-footer.svg" alt="Логотип интернет магазина ручных работ «Мишка»">
-    </a>
+    <div class="page-footer__wrapper-centering">
+      <a class="page-footer__logo">
+        <img src="img/logo-footer.svg" alt="Логотип интернет магазина ручных работ «Мишка»">
+      </a>
 
-    <ul class="social page-footer__social">
-      <li class="social__item">
-        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-          <img src="img/icon-insta.svg" alt="Инстаграм HTML Academy"></a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-          <img src="img/icon-fb.svg" alt="Фейсбук HTML Academy"></a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
-          <img src="img/icon-twitter.svg" alt="Твиттер HTML Academy"></a>
-      </li>
-    </ul>
-    <div class="copyright page-footer__copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
+      <ul class="social page-footer__social">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <img src="img/icon-insta.svg" alt="Инстаграм HTML Academy"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <img src="img/icon-fb.svg" alt="Фейсбук HTML Academy"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+            <img src="img/icon-twitter.svg" alt="Твиттер HTML Academy"></a>
+        </li>
+      </ul>
+      <div class="copyright page-footer__copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/htmlacademy.svg" width="40" height="47" alt="Логотип HTML Academy"></a>
+      </div>
     </div>
   </footer>
 

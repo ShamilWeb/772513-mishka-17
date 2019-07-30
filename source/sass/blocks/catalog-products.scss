@@ -1,15 +1,16 @@
 .catalog-products {
-  padding: 30px 0;
+  padding: 30px 0 0;
 
   @include centering();
 
   @media (min-width: 768px) {
-    padding: 60px 52px 53px;
+    padding: 80px 0 0 0;
   }
 
   @media (min-width: 1150px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 131px;
   }
 }
