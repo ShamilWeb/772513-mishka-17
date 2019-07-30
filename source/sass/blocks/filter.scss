@@ -429,7 +429,7 @@
   }
 }
 
-.filter__radio:checked+.filter__label--type::after {
+.filter__radio:checked + .filter__label--type::after {
   content: "";
   position: absolute;
   left: -48px;
@@ -464,7 +464,7 @@
   }
 }
 
-.filter__checkbox:checked+.filter__label--color::after {
+.filter__checkbox:checked + .filter__label--color::after {
   content: "";
   position: absolute;
   left: -52px;
