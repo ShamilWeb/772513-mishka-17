@@ -1,8 +1,10 @@
 .product {
   border: 1px solid #ececec;
   margin-bottom: 30px;
+  width: 261px;
 
   @media (min-width: 768px) {
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 53px;
@@ -11,6 +13,7 @@
   @media (min-width: 1150px) {
     display: block;
     width: 316px;
+    border: none;
   }
 }
 
@@ -53,6 +56,10 @@
   }
 }
 
+.product__details--basket-for-toys {
+  margin-top: 10px;
+}
+
 .product__price {
   font-size: 15px;
 
@@ -62,10 +69,20 @@
 }
 
 .product__wrapper-name {
-  padding: 25px 0;
+  padding: 27px 0;
+
+  @media (min-width: 768px) {
+    padding: 25px 0;
+  }
 
   @media (min-width: 1150px) {
     padding-bottom: 0;
+  }
+}
+
+.product__wrapper-name--basket-for-toys {
+  @media (min-width: 768px) {
+    padding-top: 22px;
   }
 }
 
@@ -74,12 +91,15 @@
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #ececec;
+
+  @media (min-width: 768px) {
+    padding-bottom: 23px;
+  }
 }
 
 .product__link-photo {
   display: block;
   height: 195px;
-  outline: 1px solid red;
 
   @media (min-width: 768px) {
     width: 334px;
@@ -87,7 +107,7 @@
   }
 
   @media (min-width: 1150px) {
-    width: 100%;
+    width: 316px;
     height: 462px;
   }
 }
@@ -111,5 +131,7 @@
 
   @media (min-width: 1150px) {
     height: 197px;
+    border: 1px solid #ececec;
+    border-top: none;
   }
 }

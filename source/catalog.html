@@ -18,7 +18,11 @@
 
       <div class="main-nav__wrapper">
         <a class="main-nav__logo logo" href="index.html">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет магазина ручных работ «Мишка»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип интернет магазина ручных работ «Мишка»">
+          </picture>
         </a>
 
         <button class="main-nav__toggle" type="button">
@@ -69,8 +73,14 @@
 
       <article class="product">
         <a class="product__link-photo" href="#">
-          <img class="product__photo" src="img/photo-hare-mobile@1x.jpg" width="260" height="165"
-            alt="Зайчик-попрыгайчик">
+          <picture>
+            <source media="(min-width: 1150px)"
+              srcset="img/photo-hare-desktop@1x.jpg, img/photo-hare-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg, img/photo-hare-tablet@2x.jpg 2x">
+            <img class="product__photo" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик"
+              srcset="img/photo-hare-mobile@2x.jpg 2x">
+          </picture>
+
         </a>
         <div class="product__wrapper-flex">
           <div class="product__wrapper-name">
@@ -91,8 +101,13 @@
 
       <article class="product">
         <a class="product__link-photo" href="#">
-          <img class="product__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="165"
-            alt="Корзинка для белья">
+          <picture>
+            <source media="(min-width: 1150px)"
+              srcset="img/photo-bowl-desktop@1x.jpg, img/photo-bowl-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg, img/photo-bowl-tablet@2x.jpg 2x">
+            <img class="product__img" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья"
+              srcset="img/photo-bowl-mobile@2x.jpg 2x">
+          </picture>
         </a>
         <div class="product__wrapper-flex">
           <div class="product__wrapper-name">
@@ -113,15 +128,21 @@
 
       <article class="product">
         <a class="product__link-photo" href="#">
-          <img class="product__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="165"
-            alt="Большая корзинка для игрушек">
+          <picture>
+            <source media="(min-width: 1150px)"
+              srcset="img/photo-toys-desktop@1x.jpg, img/photo-toys-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg, img/photo-toys-tablet@2x.jpg 2x">
+            <img class="product__img" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек"
+              srcset="photo-toys-mobile@2x.jpg 2x">
+          </picture>
+
         </a>
         <div class="product__wrapper-flex">
-          <div class="product__wrapper-name">
+          <div class="product__wrapper-name product__wrapper-name--basket-for-toys">
             <a class="product__link-name" href="#">
               <h3 class="product__name product__name--basket-for-toys">Большая корзинка<br> для игрушек</h3>
             </a>
-            <p class="product__details">Диаметр 30 см, высота 30 см</p>
+            <p class="product__details product__details--basket-for-toys">Диаметр 30 см, высота 30 см</p>
           </div>
           <div class="product__wrapper-price">
             <b class="product__price">1 500 руб.</b>
@@ -141,8 +162,12 @@
 
         <figure class="process-making__wrapper-video">
           <div class="process-making__video">
-            <img class="process-making__img-video" src="img/video-mobile@1x.jpg"
-              alt="На данном видео представлен процесс производства корцинок">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
+              <img class="process-making__img-video" src="img/video-mobile@1x.jpg"
+                alt="На данном видео представлен процесс производства корцинок" srcset="img/video-mobile@2x.jpg 2x">
+            </picture>
             <input class="process-making__control" src="img/icon-play.svg" width="101" height="77"
               alt="Воспроизвести видео" type="image">
           </div>

@@ -1,6 +1,6 @@
 .contacts {
 
-  padding: 47px 0;
+  padding: 47px 0 40px;
   position: relative;
 
   @media (min-width: 768px) {
@@ -9,7 +9,7 @@
 
   @media (min-width: 1150px) {
     min-height: 457px;
-    padding: 230px 0 110px 0;
+    padding: 230px 0 106px 0;
   }
 }
 
@@ -39,10 +39,10 @@
 
 .contacts__title {
   font-size: 18px;
-  margin-bottom: 30px;
+
 
   @include centering();
-
+  margin-bottom: 30px;
 
   @media (min-width: 768px) {
     position: relative;
@@ -151,10 +151,15 @@
   background: url("../../img/icon-map-pin.svg");
   left: 43%;
   top: 29%;
+
+  @media (min-width: 768px) {
+    left: 47%;
+    top: 27%;
+  }
 }
 
 .contacts__img-map {
-  margin-bottom: 35px;
+  margin-bottom: 38px;
   width: 100%;
 
   @media (min-width: 768px) {
@@ -175,9 +180,6 @@
   @media (min-width: 768px) {
     width: 230px;
     padding-right: 5px;
-  }
-
-  @media (min-width: 1150px) {
     line-height: 1.8;
   }
 }
@@ -187,7 +189,7 @@
   margin-bottom: 35px;
 
   @media (min-width: 768px) {
-    margin-bottom: 44px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: 1150px) {
@@ -206,13 +208,13 @@
 
   @media (min-width: 1150px) {
     margin-left: 5px;
-    margin-top: 76px;
+    margin-top: 72px;
   }
 }
 
 .contacts__line--email {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .contacts__line {
