@@ -133,15 +133,16 @@
   position: relative;
   padding: 22px 0 19px;
 
-
   @media (min-width: 768px) {
     flex-grow: 1;
     border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 0;
   }
 
   @media (min-width: 1150px) {
     order: 2;
-    padding-left: 90px;
+    padding-left: 75px;
+    padding-top: 8px;
   }
 }
 

@@ -102,6 +102,7 @@
 
   @media (min-width: 1150px) {
     margin-top: 80px;
+    margin-bottom: 39px;
   }
 }
 
@@ -131,8 +132,12 @@
   @media (min-width: 768px) {
     position: absolute;
     right: 0;
-    bottom: 30px;
+    top: 152px;
     z-index: -1;
+  }
+
+  @media (min-width: 1150px) {
+    top: 70px;
   }
 }
 

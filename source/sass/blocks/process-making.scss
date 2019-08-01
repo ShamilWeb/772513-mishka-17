@@ -9,7 +9,8 @@
   @media (min-width: 1150px) {
     display: flex;
     flex-direction: row-reverse;
-    height: 560px;
+    height: 518px;
+    margin-bottom: 45px;
   }
 }
 
@@ -17,14 +18,14 @@
   color: #444444;
   line-height: 1.85;
   font-size: 13px;
-  margin: 23px 40px 25px 34px;
+  margin: 26px 40px 25px 34px;
 
   @media (min-width: 768px) {
     font-size: 15px;
     margin-left: 42px;
     margin-right: 32px;
     margin-top: 95px;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: 1150px) {
@@ -39,7 +40,7 @@
   line-height: 1.41;
   height: 95px;
   padding: 22px 43px 0 90px;
-  background: url("../../img/icon-video.svg") 33px 27px no-repeat;
+  background: url("../img/icon-video.svg") 33px 27px no-repeat;
 
   @media (min-width: 768px) {
     font-size: 20px;
@@ -61,17 +62,21 @@
 
 .process-making__wrapper-border {
   border: 1px solid #ececec;
-  padding-bottom: 43px;
+  padding-bottom: 33px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 45px;
+  }
 
   @media (min-width: 1150px) {
-    width: 367px;
+    width: 370px;
     padding: 44px 57px 0 80px;
   }
 }
 
 .process-making__video {
   position: relative;
-  outline: 1px solid red;
+  height: 150px;
 
   @media (min-width: 768px) {
     height: 455px;

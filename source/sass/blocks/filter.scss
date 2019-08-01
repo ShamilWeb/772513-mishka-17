@@ -22,6 +22,7 @@
 
   @media (min-width: 768px) {
     font-size: 17px;
+    line-height: 1.76;
   }
 
   @media (min-width: 1150px) {
@@ -347,7 +348,7 @@
 }
 
 .filter__placeholder--phone {
-  background: url("../../img/icon-phone.svg") 230px 50% no-repeat;
+  background: url("../img/icon-phone.svg") 230px 50% no-repeat;
 
   @media (min-width: 768px) {
     background-position-x: 450px;
@@ -361,7 +362,7 @@
 }
 
 .filter__placeholder--email {
-  background: url("../../img/icon-mail.svg") 222px 70% no-repeat;
+  background: url("../img/icon-mail.svg") 222px 70% no-repeat;
 
   @media (min-width: 768px) {
     background-position-x: 445px;
