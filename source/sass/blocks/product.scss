@@ -113,10 +113,15 @@
 }
 
 .product__add-to-cart {
+  position: relative;
   border: none;
   width: 20px;
   height: 19px;
-  background: url("../img/icon-cart.svg") 0 0 no-repeat;
+}
+
+.product__cart-logo {
+  position: absolute;
+  top: 0;
 }
 
 .product__wrapper-flex {
