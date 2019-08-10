@@ -1,4 +1,5 @@
 .modal-cart {
+  display: none;
   padding: 35px 30px 45px;
   background-color: #ffffff;
   width: 320px;
@@ -15,6 +16,10 @@
     margin: -283px;
     padding-top: 48px;
   }
+}
+
+.modal-cart--open {
+  display: block;
 }
 
 .modal-cart__title {
