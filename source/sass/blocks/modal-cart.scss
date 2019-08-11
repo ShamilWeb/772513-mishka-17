@@ -8,7 +8,7 @@
   left: 50%;
   margin: -160px;
   z-index: 10;
-  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   border: solid 1px #c6c6c6;
 
   @media (min-width: 768px) {
@@ -27,7 +27,7 @@
   line-height: 1.2;
   width: 150px;
   text-align: center;
-  margin: 0px auto 20px;
+  margin: 0 auto 20px;
 
   @media (min-width: 768px) {
     width: auto;
@@ -54,11 +54,6 @@
   }
 }
 
-.modal-cart__label {
-  color: #444444;
-  font-weight: bold;
-}
-
 .modal-cart__group {
   margin: 0;
 }
@@ -77,6 +72,8 @@
   justify-content: center;
   width: 82px;
   height: 52px;
+  color: #444444;
+  font-weight: bold;
   border: 2px solid #e8e8e8;
 
   @media (min-width: 768px) {
