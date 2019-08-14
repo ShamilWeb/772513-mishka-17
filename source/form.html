@@ -6,8 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Форма</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
 </head>
 
 <body>
@@ -29,7 +33,7 @@
           </picture>
         </a>
 
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть и закрыть меню</span>
         </button>
       </div>
@@ -266,7 +270,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/script-min.js"></script>
 </body>
 
 </html>

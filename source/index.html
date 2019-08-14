@@ -6,8 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Главная</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
 </head>
 
 <body>
@@ -29,7 +33,7 @@
           </picture>
         </a>
 
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle  main-nav__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть и закрыть меню</span>
         </button>
       </div>
@@ -134,7 +138,7 @@
         </picture>
 
         <b class="popular-product__price">Цена: 990 руб.</b>
-        <button class="button popular-product__order" type="button">Заказать</button>
+        <button class="button button--open-modal popular-product__order" type="button">Заказать</button>
       </div>
     </section>
 
@@ -285,27 +289,31 @@
       <fieldset class="modal-cart__group">
         <legend class="modal-cart__form-caption">Выберите размер:</legend>
 
-        <p class="modal-cart__item">
-          <label class="modal-cart__label" for="size-s">S</label>
-          <input class="modal-cart__size" id="size-s" type="radio" name="size" value="S">
-        </p>
+        <ul class="modal-cart__items">
+          <li class="modal-cart__item">
+            <input class="modal-cart__size visually-hidden" id="size-s" type="radio" name="size" value="S" checked>
+            <label class="modal-cart__label" for="size-s">S</label>
+          </li>
 
-        <p class="modal-cart__item">
-          <label class="modal-cart__label" for="size-m">M</label>
-          <input class="modal-cart__size" id="size-m" type="radio" name="size" value="M">
-        </p>
+          <li class="modal-cart__item">
+            <input class="modal-cart__size visually-hidden" id="size-m" type="radio" name="size" value="M">
+            <label class="modal-cart__label" for="size-m">M</label>
+          </li>
 
-        <p class="modal-cart__item">
-          <label class="modal-cart__label" for="size-l">L</label>
-          <input class="modal-cart__size" id="size-l" type="radio" name="size" value="L">
-        </p>
+          <li class="modal-cart__item">
+            <input class="modal-cart__size visually-hidden" id="size-l" type="radio" name="size" value="L">
+            <label class="modal-cart__label" for="size-l">L</label>
+          </li>
+        </ul>
       </fieldset>
 
-      <button class="button button--submit">Добавить</button>
+      <button class="button button--submit modal-cart__button">Добавить</button>
     </form>
   </section>
 
   <div class="modal-overlay"></div>
+
+  <script src="js/script-min.js"></script>
 
 </body>
 

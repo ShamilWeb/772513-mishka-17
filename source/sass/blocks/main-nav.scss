@@ -49,6 +49,11 @@
   @media (min-width: 768px) {
     padding: 0;
   }
+
+  @media (max-width: 767px) {
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+  }
 }
 
 .main-nav__link--free-shipping {
@@ -137,6 +142,15 @@
   }
 }
 
+.main-nav--opened .main-nav__toggle {
+  height: 20px;
+  background: url("../img/icon-menu-close.svg");
+}
+
+.main-nav__toggle--nojs {
+  display: none;
+}
+
 .main-nav__logo {
   display: block;
   width: 86px;
@@ -215,4 +229,11 @@
 
 .main-nav__wrapper-none {
   display: block;
+}
+
+.main-nav--closed .main-nav__items,
+.main-nav--closed .main-nav__link {
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
