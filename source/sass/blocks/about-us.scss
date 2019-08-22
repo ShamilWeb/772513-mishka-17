@@ -36,21 +36,11 @@
   }
 }
 
-.about-us__wrapper-centering {
+.about-us__wrapper {
   @include centering();
 
   @media (min-width: 1150px) {
     padding-left: 170px;
-  }
-}
-
-.about-us__item {
-  font-weight: bold;
-  line-height: 1.18;
-  margin-top: 26px;
-
-  @media (min-width: 768px) {
-    margin-top: 22px;
   }
 }
 
@@ -79,6 +69,12 @@
 
   @media (min-width: 768px) {
     margin-top: 50px;
+  }
+}
+
+.about-us__item--rocket {
+  @media (min-width: 768px) {
+    width: 295px;
   }
 }
 
@@ -119,26 +115,64 @@
 
   @media (min-width: 768px) {
     font-size: 43px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: 1150px) {
     font-size: 53px;
-  }
-}
-
-.about-us__wrapper {
-  @media (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 42px;
   }
 }
 
 .about-us__items--first {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
   @media (min-width: 768px) {
-    margin-right: 100px;
+    height: 413px;
+  }
+}
+
+.about-us__item {
+  width: 200px;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.18;
+  padding-right: 0;
+  margin-bottom: 26px;
+
+  @media (min-width: 768px) {
+    margin-right: 60px;
+    width: 235px;
+    margin-bottom: 0;
   }
 
   @media (min-width: 1150px) {
-    margin-right: 120px;
+    margin-right: -110px;
+  }
+}
+
+.about-us__item--ball,
+.about-us__item--rocket,
+.about-us__item--gift {
+  width: 250px;
+
+  @media (min-width: 768px) {
+    width: 295px;
+    margin: 0;
+  }
+}
+
+.about-us__item--gift {
+  margin-bottom: 0;
+}
+
+.about-us__item--flower {
+  width: 195px;
+
+  @media (min-width: 768px) {
+    padding-right: 15px;
+    width: 230px;
   }
 }

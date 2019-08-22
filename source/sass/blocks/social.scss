@@ -21,3 +21,16 @@
 .social__item:nth-child(2) {
   margin-top: -8px;
 }
+
+.social__svg {
+  fill: #231F20;
+
+  &:focus,
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

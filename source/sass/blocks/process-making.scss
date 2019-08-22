@@ -90,11 +90,33 @@
   }
 }
 
+.process-making__play-icon {
+  color: #63D1BB;
+}
+
 .process-making__control {
+  background: transparent;
+  border: none;
   position: absolute;
   top: 50%;
   right: 50%;
-  transform: translate(50%, -50%);
+  margin-right: -56.5px;
+  margin-top: -41px;
+
+  &:focus,
+  &:hover {
+    transform: scale(1.3, 1.3);
+    transform-origin: 50% 50%;
+  }
+
+  &:active {
+    transform: scale(0.7, 0.7);
+
+  }
+
+  &:active .process-making__play-icon {
+    color: #d1f2eb;
+    }
 }
 
 .process-making__wrapper-video {
@@ -113,5 +135,18 @@
   @media (min-width: 1150px) {
     margin: 45px 0 0 0;
     width: 100%;
+  }
+}
+
+.process-making__button {
+
+  &:focus,
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

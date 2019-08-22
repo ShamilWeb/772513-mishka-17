@@ -30,6 +30,15 @@
     font-size: 20px;
     padding-right: 20px;
   }
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__name--basket-for-toys {
@@ -113,10 +122,26 @@
 }
 
 .product__add-to-cart {
+  position: relative;
+  cursor: pointer;
   border: none;
   width: 20px;
   height: 19px;
-  background: url("../img/icon-cart.svg") 0 0 no-repeat;
+}
+
+.product__cart-logo {
+  position: absolute;
+  top: 0;
+  fill: #ececec;
+
+  &:focus,
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__wrapper-flex {
@@ -127,11 +152,19 @@
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+    width: 232px;
   }
 
   @media (min-width: 1150px) {
     height: 197px;
     border: 1px solid #ececec;
     border-top: none;
+    width: auto;
+  }
+}
+
+.product:nth-of-type(2) {
+  @media (min-width: 1150px) {
+  margin: 0 auto;
   }
 }

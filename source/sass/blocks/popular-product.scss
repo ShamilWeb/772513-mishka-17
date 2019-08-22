@@ -156,3 +156,16 @@
   text-align: left;
   border-bottom: 1px solid #f1f1f1;
 }
+
+.popular-product__order {
+
+  &:focus,
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

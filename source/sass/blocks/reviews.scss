@@ -8,23 +8,22 @@
     background: #ffffff url("../img/review@1x.jpg") 0 0 no-repeat;
   }
 
-  @media (min-width: 768px) {
-    .reviews {
-      @media (min-resolution: 144dpi),
-        (min-resolution: 1.5dppx) {
-        background-image: url("../img/review@2x.jpg");
-      }
-    }
-  }
-
-
   @media (min-width: 1150px) {
     padding: 30px 0 35px;
-    background: #ffffff url("../img/review@1x.jpg") 52px 0 no-repeat;
+    background-position-x: 52px;
   }
 }
 
-.reviews__wrapper-center {
+@media (min-width: 768px) {
+  .reviews {
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
+  }
+}
+
+.reviews__wrapper {
   @include centering();
 
   @media (min-width: 1150px) {

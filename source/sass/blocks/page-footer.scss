@@ -7,7 +7,7 @@
   }
 }
 
-.page-footer__logo {
+.page-footer__logo-link {
   display: none;
 
   @media (min-width: 768px) {
@@ -25,18 +25,28 @@
   }
 }
 
-.page-footer__wrapper-centering {
+.page-footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 53px;
 
   @include centering();
 
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 45px;
+    padding-top: 40px;
+  }
+}
+
+.page-footer__logo {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

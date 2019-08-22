@@ -16,16 +16,3 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
-@mixin centering() {
-  width: 260px;
-  margin: 0 auto;
-
-  @media (min-width: 768px) {
-    width: 668px;
-  }
-
-  @media (min-width: 1150px) {
-    width: 1050px;
-  }
-}
