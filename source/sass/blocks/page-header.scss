@@ -1,9 +1,8 @@
 .page-header {
-  width: 320px;
-
-  @include centering();
 
   @media (min-width: 768px) {
+    @include centering();
+
     margin-bottom: -38px;
     position: relative;
   }

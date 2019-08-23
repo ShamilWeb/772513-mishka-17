@@ -44,14 +44,13 @@
   display: block;
   font-weight: bold;
   color: #000000;
-  padding: 30px 0 30px 45px;
+  padding: 30px 0 30px 67px;
 
   @media (min-width: 768px) {
     padding: 0;
   }
 
   @media (max-width: 767px) {
-    border-bottom: 1px solid #e8e8e8;
     border-top: 1px solid #e8e8e8;
   }
 
@@ -62,6 +61,12 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.main-nav__link:nth-of-type(2) {
+  @media (max-width: 767px) {
+    border-bottom: 1px solid #e8e8e8;
   }
 }
 
@@ -85,7 +90,7 @@
 
 .main-nav__search-logo {
   position: absolute;
-  left: 0;
+  left: 22px;
   fill: #d7d6d6;
 
   @media (min-width: 768px) {
@@ -124,7 +129,7 @@
 
 .main-cart-logo {
   position: absolute;
-  left: 0;
+  left: 22px;
   fill: #d7d6d6;
 
   @media (min-width: 768px) {
@@ -136,7 +141,7 @@
   position: absolute;
   width: 20px;
   height: 14px;
-  right: 0;
+  right: 31px;
   top: 50%;
   transform: translateY(-50%);
   border: none;
@@ -178,6 +183,7 @@
 .main-nav__wrapper {
   position: relative;
   padding: 22px 0 19px;
+  border-top: 1px solid #e8e8e8;
 
   @media (min-width: 768px) {
     flex-grow: 1;

@@ -234,11 +234,12 @@
 
 .filter__fieldset--name {
   padding-top: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 
   @media (min-width: 768px) {
     padding-top: 48px;
     padding-bottom: 25px;
+    margin-bottom: 10px;
   }
 }
 
@@ -514,11 +515,11 @@
 .filter__label--color:focus::before,
 .filter__label--type:hover::before,
 .filter__label--color:hover::before {
-   border-color: #62d1ba;
+  border-color: #62d1ba;
 }
 
 .filter__label--type:active::before,
 .filter__label--color:active::before {
-   border-color: #444444;
-   opacity: 0.3;
+  border-color: #444444;
+  opacity: 0.3;
 }
