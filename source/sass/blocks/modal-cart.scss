@@ -91,6 +91,6 @@
   padding: 16px 0;
 }
 
-.modal-cart__size:checked+.modal-cart__label {
+.modal-cart__size:checked + .modal-cart__label {
   border-color: #63d1bb;
 }

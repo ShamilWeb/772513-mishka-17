@@ -16,6 +16,10 @@
 
 <body>
 
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="page-header">
 
     <nav class="main-nav">
@@ -29,7 +33,8 @@
           </picture>
         </a>
 
-        <button class="main-nav__toggle  main-nav__toggle--nojs" type="button">
+        <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
+
           <span class="visually-hidden">Открыть и закрыть меню</span>
         </button>
       </div>
@@ -48,14 +53,18 @@
 
       <a class="main-nav__link main-nav__link--search" href="search.html">
         <svg class="main-nav__search-logo" role="img" width="18" height="18">
+
           <use xlink:href="img/sprite.svg#icon-search"></use>
+
         </svg>
         <span class="main-nav__link-hide">Поиск по сайту</span>
       </a>
 
       <a class="main-nav__link main-nav__link--cart" href="cart.html">
         <svg class="main-cart-logo" aria-hidden="true" role="presentation" focusable="false" width="21" height="18">
+
           <use xlink:href="img/sprite.svg#icon-cart"></use>
+
         </svg>
         Корзина: пока пуста
       </a>
@@ -96,7 +105,9 @@
 
             <ul class="filter__list filter__list--type">
               <li class="filter__item filter__item--type">
+
                 <input class="filter__radio visually-hidden" id="radio-1" type="radio" name="type" value="Аксессуар для интерьера" checked="">
+
                 <label class="filter__label filter__label--type" for="radio-1">Аксессуар для интерьера</label>
               </li>
               <li class="filter__item filter__item--type">
@@ -157,14 +168,18 @@
               <li class="filter__item-name">
                 <label class="filter__label filter__label--flex">
                   Имя:
+
                   <input class="filter__placeholder filter__placeholder--grow" type="text" name="name" placeholder="Введите ваше имя*" required="">
+
                 </label>
               </li>
 
               <li class="filter__item-name">
                 <label class="filter__label filter__label--flex">
                   Фамилия:
+
                   <input class="filter__placeholder filter__placeholder--grow" type="text" name="surname" placeholder="Укажите фамилию*" required="">
+
                 </label>
               </li>
 
@@ -219,6 +234,7 @@
 
   <footer class="page-footer">
 
+
     <div class="page-footer__wrapper">
       <a class="page-footer__logo-link" href="index.html">
         <svg class="page-footer__logo" role="img" width="102" height="34" aria-labelledby="logo">
@@ -230,6 +246,7 @@
       <ul class="social page-footer__social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+
             <svg class="social__svg" role="img" width="22" height="21" aria-labelledby="inst">
               <title id="inst">Инстаграм HTML Academy</title>
               <use xlink:href="img/sprite.svg#icon-insta"></use>
@@ -238,6 +255,7 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+
             <svg class="social__svg" role="img" width="15" height="28" aria-labelledby="fb">
               <title id="fb">Фейсбук HTML Academy</title>
               <use xlink:href="img/sprite.svg#icon-fb"></use>
@@ -246,6 +264,7 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+
             <svg class="social__svg" role="img" width="23" height="20" viewBox="0 0 150 150" aria-labelledby="twit">
               <title id="twit">Твиттер HTML Academy</title>
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
@@ -256,6 +275,7 @@
       <div class="copyright page-footer__copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+
           <svg class="copyright__svg" role="img" width="27" height="34" aria-labelledby="html">
             <title id="html"></title>
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
