@@ -91,7 +91,7 @@
 }
 
 .process-making__play-icon {
-  color: #63D1BB;
+  color: #63d1bb;
 }
 
 .process-making__control {
@@ -111,12 +111,11 @@
 
   &:active {
     transform: scale(0.7, 0.7);
-
   }
 
   &:active .process-making__play-icon {
     color: #d1f2eb;
-    }
+  }
 }
 
 .process-making__wrapper-video {
@@ -136,9 +135,6 @@
     margin: 45px 0 0 0;
     width: 100%;
   }
-}
-
-.process-making__button {
 
   &:focus,
   &:hover {

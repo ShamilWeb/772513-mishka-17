@@ -5,25 +5,26 @@
 
 .copyright__text {
   font-size: 19px;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  color: #000000;
+
+  &:focus,
+  &:hover {
+    .copyright__svg {
+      fill: #46c1ae;
+    }
+  }
 
   &:active {
     opacity: 0.3;
   }
-}
-
-.copyright__link {
-  margin: 5px 0 0 25px;
 }
 
 .copyright__svg {
   fill: #63d1bb;
-
-  &:focus,
-  &:hover {
-    fill: #46c1ae;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  margin: 5px 0 0 25px;
 }

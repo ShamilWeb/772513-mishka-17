@@ -80,6 +80,11 @@
   @media (min-width: 768px) {
     width: auto;
   }
+
+  &:focus,
+  &:hover {
+    border-color: #62d1ba;
+  }
 }
 
 .filter__placeholder::placeholder {
@@ -104,10 +109,6 @@
     margin-bottom: 0;
     font-size: 17px;
   }
-}
-
-.filter__wrapper {
-
 }
 
 .filter__wrapper--phone,
@@ -354,13 +355,6 @@
 .filter__placeholder--grow {
   border: none;
   border-bottom: 2px solid #000000;
-}
-
-.filter__placeholder {
-  &:focus,
-  &:hover {
-    border-color: #62d1ba;
-  }
 }
 
 .filter__placeholder--phone {
