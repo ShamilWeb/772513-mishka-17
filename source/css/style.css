@@ -11,7 +11,7 @@
   font-style: normal; }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px; }
 
 a {
@@ -157,7 +157,7 @@ html {
   background: transparent;
   border: 2px solid #444444;
   padding: 14px 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   color: #444444;
@@ -592,31 +592,31 @@ html {
       width: auto; } }
 
 .filter__placeholder::-webkit-input-placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: normal;
   color: rgba(68, 68, 68, 0.3); }
 
 .filter__placeholder::-moz-placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: normal;
   color: rgba(68, 68, 68, 0.3); }
 
 .filter__placeholder:-ms-input-placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: normal;
   color: rgba(68, 68, 68, 0.3); }
 
 .filter__placeholder::-ms-input-placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: normal;
   color: rgba(68, 68, 68, 0.3); }
 
 .filter__placeholder::placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: normal;
   color: rgba(68, 68, 68, 0.3); }

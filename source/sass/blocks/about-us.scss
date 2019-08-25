@@ -16,21 +16,26 @@
 .about-us::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 320px;
   height: 6px;
   background: url("../img/bg-zigzag-line.svg");
   background-size: 340px;
   top: 0;
-  left: 0;
+  left: 50%;
+  margin-left: -160px;
   transform: rotate(180deg);
   background-repeat: repeat-x;
 
   @media (min-width: 768px) {
+    width: 768px;
+    margin-left: -384px;
     height: 15px;
     background-size: 800px;
   }
 
   @media (min-width: 1150px) {
+    width: 1050px;
+    margin-left: -525px;
     height: 23px;
     background-size: 1100px;
   }

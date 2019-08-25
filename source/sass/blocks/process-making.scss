@@ -18,19 +18,46 @@
   color: #444444;
   line-height: 1.85;
   font-size: 13px;
-  margin: 26px 40px 25px 34px;
+  padding: 26px 40px 33px 34px;
 
   @media (min-width: 768px) {
     font-size: 15px;
-    margin-left: 42px;
-    margin-right: 32px;
-    margin-top: 95px;
-    margin-bottom: 37px;
+    padding: 95px 33px 45px 42px;
   }
 
   @media (min-width: 1150px) {
-    margin: 0;
+    padding: 0;
     line-height: 2;
+  }
+}
+
+.process-making:focus .process-making__text,
+.process-making:hover .process-making__text {
+  box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 1150px) {
+    box-shadow: none;
+  }
+}
+
+.process-making:active .process-making__text {
+  box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 1150px) {
+    box-shadow: none;
+  }
+}
+
+.process-making:focus .process-making__wrapper-border,
+.process-making:hover .process-making__wrapper-border {
+  @media (min-width: 1150px) {
+    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.process-making:active .process-making__wrapper-border {
+  @media (min-width: 1150px) {
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -62,11 +89,6 @@
 
 .process-making__wrapper-border {
   border: 1px solid #ececec;
-  padding-bottom: 33px;
-
-  @media (min-width: 768px) {
-    padding-bottom: 45px;
-  }
 
   @media (min-width: 1150px) {
     width: 370px;
@@ -124,11 +146,10 @@
 
 .process-making__button {
   width: 193px;
-  margin-left: 34px;
+  margin-top: 25px;
 
   @media (min-width: 768px) {
     width: 584px;
-    margin-left: 42px;
   }
 
   @media (min-width: 1150px) {
