@@ -109,6 +109,10 @@
   &:hover {
     height: 108px;
     margin-top: -5px;
+
+    @media (min-width: 768px) {
+      height: 124px;
+    }
   }
 }
 
